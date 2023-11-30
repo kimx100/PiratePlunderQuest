@@ -2,18 +2,18 @@
 <html>
 <head>
     <title>Index - PiratePlunderQuest</title>
-    <!-- ... your styles ... -->
 </head>
 <body>
+    <!-- ... styles ... -->
     <div id="youtube-player" style="height: 90vh; width: 100%;"></div>
 
     <!-- Include the MQTT.js library -->
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 
     <script>
-        // Define the MQTT server details
-        const MQTT_SERVER = "wss://mqtt.nextservices.dk/mqtt"; // Adjust the URL if needed
-        const MQTT_PORT = 8883; // Usually for WebSockets over SSL/TLS it's 443 or a similar secure port
+        // MQTT server details
+        const MQTT_SERVER = "mqtt://mqtt.nextservices.dk/mqtt";
+        const MQTT_PORT = 8883; 
         const MQTT_CLIENT_ID = "PiratePlunderQuest";
 
         // Create a YouTube player variable
