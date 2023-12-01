@@ -12,8 +12,8 @@
 
     <script>
         // MQTT server details
-        const MQTT_SERVER = "mqtt://mqtt.nextservices.dk/mqtt";
-        const MQTT_PORT = 8883; 
+        const MQTT_SERVER = "wss://mqtt.nextservices.dk/mqtt";
+        const MQTT_PORT = 0; 
         const MQTT_CLIENT_ID = "PiratePlunderQuest";
 
         // Create a YouTube player variable
@@ -51,7 +51,7 @@
 
             client.on('connect', function () {
                 console.log('Connected to MQTT server');
-                client.subscribe('a', function (err) {
+                client.subscribe('kim', function (err) {
                     if (!err) {
                         console.log('Subscribed to topic');
                     }
