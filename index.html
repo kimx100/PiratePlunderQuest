@@ -51,7 +51,7 @@
 
             client.on('connect', function () {
                 console.log('Connected to MQTT server');
-                client.subscribe('yourTopic', function (err) {
+                client.subscribe('a', function (err) {
                     if (!err) {
                         console.log('Subscribed to topic');
                     }
